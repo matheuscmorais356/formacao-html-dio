@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio de Projeto</title>
+</head>
+
+<body>
+  <h1 id="start">Introdução ao HTML</h1>
+  <hr />
+
+  <h2>Índice</h2>
+  <ul>
+    <li>
+      <a href="#structure">Estrutura básica do HTML</a>
+    </li>
+    <li>
+      <a href="#tags">O que são tags</a>
+    </li>
+    <li>
+      <a href="#attributes">O que são atributos</a>
+    </li>
+    <li>
+      <a href="#texts">Tags de texto</a>
+    </li>
+    <li>
+      <a href="#lists">Listas</a>
+    </li>
+    <li>
+      <a href="#links">Links</a>
+    </li>
+  </ul>
+
+  <h2 id="struture">Estrutura básica do HTML</h2>
+  <small><a href="#start">(Voltar)</a></small>
+
+  <p>
+    A estrutura básica do <strong>HTML</strong> organiza e define o conteúdo de uma página web de forma hierárquica. No
+    topo, temos o <strong><code>&lt;!DOCTYPE html&gt;</code></strong>, que informa ao navegador que o documento é
+    <strong>HTML5</strong>. Em seguida, o elemento <strong><code>&lt;html&gt;</code></strong> envolve todo o conteúdo e
+    usa o atributo <strong><code>lang</code></strong> para especificar o idioma da página.
+  </p>
+  <p>
+    Dentro da tag <strong><code>&lt;html&gt;</code></strong>, a estrutura é dividida em dua partes principais:
+  </p>
+  <ol>
+    <li>
+      <p>
+        <strong>Cabeçalho (<code>&lt;head&gt;</code>)</strong>: Contém informações sobre a página que não são exibidas
+        diretamente no corpo de página, como o título, ícones, links para estilos (CSS) e metadados importantes, como o
+        <strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>, que define a codificação de caracteres.
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Corpo (<code>&lt;body&gt;</code>)</strong>: Inclui todo o conteúdo visível da página, como textos,
+        imagens, links, tabelas e formulários. Os elementos do <strong><code>&lt;body&gt;</code></strong> são o que o
+        usuário verá e interagirá diretamente.
+      </p>
+    </li>
+  </ol>
+
+  <pre>
+    <strong><code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+
+        &lt;/head&gt;
+        &lt;body&gt;
+
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code></strong>
+  </pre>
+
+  <hr />
+  <h2 id="tags">O que são tags</h2>
+  <small><a href="#start">(Voltar)</a></small>
+
+  <p>
+    As tags <strong>HTML</strong> são os elementos básicos que estruturam e organizam o conteúdo de uma página web. Cada
+    tag tem uma função específica e é usada para definir diferentes tipos de conteúdo e elementos de formatação. Tags
+    <strong>HTML</strong> são representadas por palavras-chave colocadas entre colchetes angulares, como
+    <strong><code>&lt;p&gt;</code></strong>, <strong><code>&lt;h1&gt;</code></strong>, ou
+    <strong><code>&lt;div&gt;</code></strong>. Elas normalmente vêm em pares: uma tag de abertura, como
+    <strong><code>&lt;p&gt;</code></strong>, e uma de fechamento, como <strong><code>&lt;/p&gt;</code></strong>,
+    envolvendo o conteúdo que elas definem.
+  </p>
+
+  <p>
+    As tags são fundamentais para criar a hierarquia e semântica de uma página. Por exemplo:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Tags de título</strong> (<strong><code>&lt;h1&gt;</code></strong> a
+      <strong><code>&lt;h6&gt;</code></strong>): Definem títulos e subtítulos, com
+      <strong><code>&lt;h1&gt;</code></strong> sendo o mais importante e <strong><code>&lt;h6&gt;</code></strong> o
+      menos importante.
+    </li>
+    <li>
+      <strong>Tag de parágrafo</strong> (<strong><code>&lt;p&gt;</code></strong>): Define blocos de texto.
+    </li>
+    <li>
+      <strong>Tags de lista</strong> (<strong><code>&lt;ul&gt;</code></strong>,
+      <strong><code>&lt;ol&gt;</code></strong>, <strong><code>&lt;li&gt;</code></strong>): Criam listas ordenadas ou não
+      ordenadas e seus itens.
+    </li>
+    <li>
+      <strong>Tags de link</strong> (<strong><code>&lt;a&gt;</code></strong>): Criam links para outras páginas ou
+      seções.
+    </li>
+    <li>
+      <strong>Tags de imagem</strong> (<strong><code>&lt;img&gt;</code></strong>): Inserem imagens na página.
+    </li>
+  </ul>
+
+  <p>Além disso, há tags mais complexas, como <strong><code>&lt;table&gt;</code></strong> para tabelas,
+    <strong><code>&lt;form&gt;</code></strong> para formulários e <strong><code>&lt;div&gt;</code></strong> e
+    <strong><code>&lt;span&gt;</code></strong>, que são usadas para organizar e estilizar grupos de conteúdo.
+  </p>
+
+  <p>Cada tag tem seu papel semântico, ajudando navegadores, motores de busca e tecnologias assistivas a interpretar e
+    exibir o conteúdo corretamente.</p>
+  <hr />
+
+  <h2 id="attributes">O que são atributos</h2>
+  <small><a href="#start">(Voltar)</a></small>
+
+  <p>
+    Atributos <strong>HTML</strong> são informações adicionais inseridas dentro das tags para modificar ou definir
+    propriedades dos elementos. Eles ajudam a configurar o comportamento, a aparência ou as características de um
+    elemento na página. Normalmente, os atributos são escritos dentro da tag de abertura e seguem o formato
+    <strong><code>nome="valor"</code></strong>, por exemplo:
+  </p>
+
+  <pre>
+    <strong><code>
+      &lt;a href="https://exemplo.com"&gt;Clique aqui&lt;/a&gt;
+    </code></strong>
+  </pre>
+
+  <p>
+    Nesse exemplo, <strong><code>href</code></strong> é um atributo que define o destino do link.
+  </p>
+
+  <h3>Atributos globais</h3>
+
+  <p>Os atributos globais são aqueles que podem ser utilizados em qualque tag <strong>HTML</strong>.</p>
+
+  <ul>
+    <li>
+      <strong><code>id</code></strong>: Identifica unicamente o elemento na página.
+    </li>
+    <li>
+      <strong><code>class</code></strong>: Atribui uma ou mais classes CSS ao elemento para estilização.
+    </li>
+    <li>
+      <strong><code>style</code></strong>: Define estilos CSS diretamente no elemento.
+    </li>
+    <li>
+      <strong><code>title</code></strong>: Define um texto que aparece como dica quando o usuário passa o mouse sobre o
+      elemento.
+    </li>
+  </ul>
+
+  <h3>Atributos Específicos</h3>
+  <p>São próprios de determinadas tags e configuram funções exclusivas desses elementos.</p>
+
+  <ul>
+    <li>Em links (<strong><code>&lt;a&gt;</code></strong>):
+      <ul>
+        <li><strong><code>href</code></strong>: define o destino do link</li>
+        <li><strong><code>target</code></strong>: determina como abrir o link.</li>
+      </ul>
+    </li>
+    <li>Em imagens (<strong><code>&lt;img&gt;</code></strong>):
+      <ul>
+        <li><strong><code>src</code></strong>: define a URL da imagem</li>
+        <li><strong><code>alt</code></strong>: fornece uma descrição alternativa.</li>
+      </ul>
+    </li>
+    <li>Em inputs de formulário (<strong><code>&lt;input&gt;</code></strong>):
+      <ul>
+        <li><strong><code>type</code></strong>: define o tipo de entrada</li>
+        <li><strong><code>placeholder</code></strong>: mostra um texto sugestivo</li>
+        <li><strong><code>value</code></strong>: define o valor padrão.</li>
+      </ul>
+    </li>
+  </ul>
+  <hr />
+
+  <h2 id="texts">Tags de texto</h2>
+  <small><a href="#start">(Voltar)</a></small>
+
+  <p>
+    Em HTML, existem várias tags que ajudam a formatar e organizar textos. Cada tag tem uma função específica que
+    contribui para a estrutura e semântica da página, facilitando a leitura e o estilo do conteúdo. Abaixo estão algumas
+    das principais tags de texto:
+  </p>
+
+  <ul>
+    <li>
+      <strong><code>&lt;p&gt;</code></strong>: Define um parágrafo de texto. É uma das tags mais comuns e cria uma
+      separação entre blocos de texto.
+    </li>
+
+    <li>
+      <strong><code>&lt;h1&gt;</code></strong> a <strong><code>&lt;h6&gt;</code></strong>: Representam títulos e
+      subtítulos, com <strong><code>&lt;h1&gt;</code></strong> sendo o título principal e
+      <strong><code>&lt;h6&gt;</code></strong> o menos importante. Esses níveis de título ajudam a organizar o conteúdo
+      e são muito importantes para SEO.
+    </li>
+
+    <li>
+      <strong><code>&lt;strong&gt;</code></strong>: Aplica ênfase forte ao texto, exibindo-o em negrito. É usado
+      quando queremos dar destaque semântico ao conteúdo, não apenas visual.
+    </li>
+
+    <li>
+      <strong><code>&lt;em&gt;</code></strong>: Marca o texto com ênfase, normalmente exibindo-o em itálico. Diferente
+      do <strong><code>&lt;i&gt;</code></strong>, o <strong><code>&lt;em&gt;</code></strong> possui significado
+      semântico, indicando um trecho importante para o contexto.
+    </li>
+
+    <li>
+      <strong><code>&lt;span&gt;</code></strong>: Um elemento genérico para estilizar partes do texto. Diferente do
+      <strong><code>&lt;div&gt;</code></strong>, que é um contêiner em bloco, o
+      <strong><code>&lt;span&gt;</code></strong> é um contêiner em linha, ideal para aplicar estilos específicos em
+      pequenas partes do texto.
+    </li>
+
+    <li>
+      <strong><code>&lt;br&gt;</code></strong>: Insere uma quebra de linha no texto. É útil para criar uma nova linha
+      sem começar um novo parágrafo.
+    </li>
+
+    <li>
+      <strong><code>&lt;blockquote&gt;</code></strong>: Usado para inserir uma citação longa ou bloco de citação.
+      Normalmente, o navegador aplica uma indentação, dando destaque à citação.
+    </li>
+
+    <li>
+      <strong><code>&lt;code&gt;</code></strong>: Exibe texto em estilo de código, com uma fonte monoespaçada, ideal
+      para exibir trechos de código ou comandos técnicos.
+    </li>
+
+    <li>
+      <strong><code>&lt;mark&gt;</code></strong>: Realça o texto como se estivesse marcado, destacando-o visualmente
+      como relevante ou importante no contexto.
+    </li>
+
+    <li>
+      <strong><code>&lt;del&gt;</code></strong>: Indica texto deletado ou removido, geralmente aparecendo com uma
+      linha no meio do texto.
+    </li>
+
+    <li>
+      <strong><code>&lt;ins&gt;</code></strong>: Indica texto inserido ou adicionado recentemente, geralmente exibido
+      com um sublinhado.
+    </li>
+  </ul>
+
+  <p>
+    Essas tags ajudam a criar uma estrutura de texto mais rica e semântica em HTML, facilitando a compreensão e
+    acessibilidade do conteúdo para usuários e motores de busca.
+  </p>
+
+  <hr />
+
+  <h2 id="lists">Listas</h2>
+  <small><a href="#start">(Voltar)</a></small>
+
+  <p>
+    Em <strong>HTML</strong>, as listas ordenadas e não ordenadas são usadas para organizar informações em formato de
+    lista. Elas são criadas com as tags <strong><code>&lt;ol&gt;</code></strong>,
+    <strong><code>&lt;ul&gt;</code></strong>, e
+    <strong><code>&lt;li&gt;</code></strong>, e cada uma tem uma finalidade e uma forma de apresentação específicas.
+  </p>
+
+  <h3>Listas ordenadas <strong><code>&lt;ol&gt;</code></strong></h3>
+  <p>
+    Uma <strong>lista ordenada</strong> é usada quando a ordem dos itens importa. Os itens da lista são numerados
+    automaticamente pelo navegador. Para criar uma lista ordenada, usamos a tag <strong><code>&lt;ol&gt;</code></strong>
+    (Ordered List), e cada item da lista é marcado com a tag <strong><code>&lt;li&gt;</code></strong> (List Item).
+  </p>
+  <pre>
+    <strong><code>
+      &lt;ol&gt;
+        &lt;li&gt;Primeiro item&lt;/li&gt;
+        &lt;li&gt;Segundo item&lt;/li&gt;
+        &lt;li&gt;Terceiro item&lt;/li&gt;
+      &lt;/ol&gt;
+    </code></strong>
+  </pre>
+
+  <p>Exemplo de lista ordenada:</p>
+  <ol>
+    <li>Primeiro item</li>
+    <li>Segundo item</li>
+    <li>Terceiro item</li>
+  </ol>
+
+  <h3>Listas não ordenadas <strong><code>&lt;ul&gt;</code></strong></h3>
+
+  <p>
+    Uma <strong>lista não ordenada</strong> é usada quando a ordem dos itens não é importante. Os itens da lista são
+    marcados com pontos (bullets) ou outros símbolos. Para criar uma lista não ordenada, usamos a tag
+    <strong><code>&lt;ul&gt;</code></strong> (Unordered List), e cada item da lista também é marcado com a tag
+    <strong><code>&lt;li&gt;</code></strong> (List Item).
+  </p>
+
+  <pre>
+    <strong><code>
+      &lt;ul&gt;
+        &lt;li&gt;Primeiro item&lt;/li&gt;
+        &lt;li&gt;Segundo item&lt;/li&gt;
+        &lt;li&gt;Terceiro item&lt;/li&gt;
+      &lt;/ul&gt;
+    </code></strong>
+  </pre>
+
+  <p>Exemplo de lista não ordenada:</p>
+
+  <ul>
+    <li>Primeiro item</li>
+    <li>Segundo item</li>
+    <li>Terceiro item</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="links">Links</h2>
+  <small><a href="#start">(Voltar)</a></small>
+
+  <p>Em HTML, <strong><code>links</code></strong> são elementos que permitem a navegação entre páginas, eles são criados
+    com a tag <strong><code>&lt;a&gt;</code></strong>, que
+    significa <strong><code>“anchor”</code></strong> (âncora). Os links podem apontar para URLs, navegar entre páginas
+    da mesma aplicação, navegar para partes específicas da página ou mesmo disparar downloads.
+  </p>
+
+  <h3>Criando um Link Básico</h3>
+  <p>
+    A estrutura básica de um link é com a tag <strong><code>&lt;a&gt;</code></strong> e o atributo
+    <strong><code>href</code></strong> (Hypertext REFerence), que define o destino do link.
+  </p>
+
+  <pre>
+    <strong><code>
+      &lt;a href="https://www.exemplo.com"&gt;Visite o Exemplo&lt;/a&gt;
+    </code></strong>
+  </pre>
+
+  <h3>Atributos Comuns do Link</h3>
+
+  <h4><strong><code>href</code></strong></h4>
+  <p>
+    Define o destino do link. Pode ser uma URL completa, uma URL relativa, um identificador de âncora ou o caminho de
+    um arquivo local.
+  </p>
+
+  <p>Exemplo:</p>
+
+  <pre>
+    <strong><code>
+      &lt;a href="https://www.exemplo.com"&gt;Abrir em uma nova aba&lt;/a&gt;
+    </code></strong>
+  </pre>
+
+  <h4><strong><code>target</code></strong></h4>
+  <p>Define onde o link será aberto.</p>
+
+  <ul>
+    <li>
+      <strong><code>_self</code></strong>: (Padrão) abre o link na mesma aba.
+    </li>
+    <li>
+      <strong><code>_blank</code></strong>: abre o link em uma nova aba ou janela.
+    </li>
+    <li>
+      <strong><code>_parent</code></strong>: abre o link na janela ou quadro pai.
+    </li>
+    <li>
+      <strong><code>_top</code></strong>: abre o link na janela ou quadro superior.
+    </li>
+  </ul>
+
+  <p>Exemplo:</p>
+
+  <pre>
+    <strong><code>
+      &lt;a href="https://www.exemplo.com" target="_blank"&gt;Abrir em uma nova aba&lt;/a&gt;
+    </code></strong>
+  </pre>
+
+  <h4><strong><code>rel</code></strong></h4>
+  <p>
+    Define a relação entre o documento atual e o link. É especialmente útil quando
+    <strong><code>target="_blank"</code></strong> é usado, para melhorar a segurança.
+  </p>
+
+  <ul>
+    <li>
+      <strong><code>rel="noopener"</code></strong>: Impede que a página de abertura obtenha qualquer tipo de acesso à
+      página original.
+    </li>
+    <li>
+      <strong><code>rel="noreferrer"</code></strong>: Instrui o navegador a omitir o cabeçalho “Referer” e não vazar
+      informações sobre o referenciador.
+    </li>
+  </ul>
+
+  <p>Exemplo:</p>
+
+  <pre>
+    <strong><code>
+      &lt;a 
+        href="https://www.exemplo.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      &gt;
+        Link Seguro
+      &lt;/a&gt;
+    </code></strong>
+  </pre>
+
+  <h4><strong><code>title</code></strong></h4>
+  <p>
+    Exibe um texto ao passar o mouse sobre o link. Isso pode melhorar a acessibilidade e fornecer mais informações ao
+    usuário.
+  </p>
+
+  <p>Exemplo:</p>
+
+  <pre>
+    <strong><code>
+      &lt;a href="https://www.exemplo.com" title="Visite o site Exemplo"&gt;Exemplo&lt;/a&gt;
+    </code></strong>
+  </pre>
+
+  <h3>Links para Partes Específicas do Documento</h3>
+  <p>É possível criar links para seções específicas da mesma página usando identificadores (IDs).</p>
+
+  <ol>
+    <li>
+      Atribua um <strong><code>id</code></strong> ao elemento de destino.
+    </li>
+    <pre>
+      <strong><code>
+        &lt;h2 id="secao"&gt;Seção Específica&lt;/h2&gt;
+      </code></strong>
+    </pre>
+
+    <li>
+      Crie o link usando <strong><code>#</code></strong> seguido pelo valor do <strong><code>id</code></strong>.
+    </li>
+    <pre>
+      <strong><code>
+        &lt;a href="#secao"&gt;Ir para a Seção&lt;/a&gt;
+      </code></strong>
+    </pre>
+  </ol>
+
+</body>
+
+</html>
